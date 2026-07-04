@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us :: Barter Constructions Mumbai</title>
+    <meta name="description" content="Get in touch with Barter Constructions. Submit your builder project and barter asset details for a free consultation.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Subpage Banner style */
+        .subpage-banner {
+            padding: 6rem 2rem;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            text-align: center;
+            margin-top: 90px;
+            position: relative;
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('images/hero_mumbai.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .subpage-banner h1 {
+            color: var(--bg-white);
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        .subpage-breadcrumbs {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-top: 0.5rem;
+        }
+        .subpage-breadcrumbs a {
+            color: var(--accent-orange);
+        }
+
+        /* Contact Page Grid layout */
+        .contact-section {
+            padding: 5rem 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 4rem;
+            margin-bottom: 5rem;
+        }
+        
+        .contact-info-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .contact-info-card {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 6px;
+            box-shadow: var(--shadow-premium);
+            display: flex;
+            gap: 1.25rem;
+            align-items: flex-start;
+        }
+        
+        .contact-card-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(249, 115, 22, 0.1);
+            color: var(--accent-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-card-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--primary-dark);
+        }
+        
+        .contact-card-text {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        
+        /* Interactive Form style is now loaded globally from style.css */
+        
+        /* Map Container */
+        .contact-map-wrapper {
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: var(--shadow-premium);
+            border: 1px solid var(--border-color);
+            height: 400px;
+        }
+    </style>
+</head>
+<body class="blueprint-bg">
+
+    <!-- Topbar info -->
+    <div class="topbar">
+        <div class="topbar-container">
+            <div class="topbar-info">
+                <div class="topbar-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:barterconstructions@gmail.com">barterconstructions@gmail.com</a>
+                </div>
+                <div class="topbar-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 77770 45007</span>
+                </div>
+            </div>
+            <div class="topbar-socials">
+                <a href="https://www.facebook.com/profile.php?id=61577663205907" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/barterconstructions/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="site-header" id="mainHeader">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <div class="logo-text">BARTER<span>CONSTRUCTIONS</span></div>
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="category.html" class="nav-link">Our Category</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-close" id="mobileClose">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="logo-text">BARTER<span>CONSTRUCTIONS</span></div>
+        <ul class="mobile-menu">
+            <li><a href="index.html" class="mobile-link">Home</a></li>
+            <li><a href="about.html" class="mobile-link">About Us</a></li>
+            <li><a href="category.html" class="mobile-link">Our Category</a></li>
+            <li><a href="services.html" class="mobile-link">Services</a></li>
+            <li><a href="projects.html" class="mobile-link">Projects</a></li>
+            <li><a href="contact.html" class="mobile-link active">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;">Enquire Now</a>
+    </div>
+    <div class="overlay-backdrop" id="overlayBackdrop"></div>
+
+    <!-- Subpage Banner -->
+    <section class="subpage-banner">
+        <h1>Contact & Proposals</h1>
+        <div class="subpage-breadcrumbs">
+            <a href="index.html">Home</a> &nbsp;/&nbsp; Contact Us
+        </div>
+    </section>
+
+    <!-- Contact details and form section -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <!-- Details Panel -->
+            <div class="contact-info-panel">
+                <div class="contact-info-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h3 class="contact-card-title">Corporate Office</h3>
+                        <p class="contact-card-text">Prasad Chamber, Tata Road 2, Opera House, Girgaon, Mumbai, Maharashtra 400004</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h3 class="contact-card-title">Phone Numbers</h3>
+                        <p class="contact-card-text">+91 77770 45007<br><span style="font-size: 0.8rem; color: var(--text-muted);">Mon - Sat (9:00 AM - 7:00 PM)</span></p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <h3 class="contact-card-title">Email Inquiries</h3>
+                        <p class="contact-card-text">barterconstructions@gmail.com<br><a href="mailto:info@barterconstructions.com" style="color: var(--accent-orange); font-size: 0.85rem;">info@barterconstructions.com</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lead Generation Form Panel -->
+            <div class="contact-form-panel">
+                <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--primary-dark);">Submit Barter RFP Proposal</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem;">Are you a developer with a pending project or a vendor with surplus materials? Let us know the parameters, and we will formulate a barter term sheet.</p>
+                
+                <form id="barterContactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="formName">Contact Person Name <span>*</span></label>
+                            <input type="text" id="formName" placeholder="Enter name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formCompany">Developer / Company Name</label>
+                            <input type="text" id="formCompany" placeholder="Enter company name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="formPhone">Mobile Number <span>*</span></label>
+                            <input type="tel" id="formPhone" placeholder="Enter 10-digit number" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail">Email Address <span>*</span></label>
+                            <input type="email" id="formEmail" placeholder="Enter email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="formService">Construction Work Needed <span>*</span></label>
+                            <select id="formService" required>
+                                <option value="" disabled selected>Select service</option>
+                                <option value="rcc">RCC Structure Shell Casting</option>
+                                <option value="finishing">Internal / External Finishes</option>
+                                <option value="turnkey">Full Turnkey Construction</option>
+                                <option value="material">Bulk Material Supplies Only</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="formAsset">Offered Barter Inventory <span>*</span></label>
+                            <select id="formAsset" required>
+                                <option value="" disabled selected>Select inventory swap</option>
+                                <option value="flats">Residential Apartments / Flats</option>
+                                <option value="shops">Commercial Shops / Retail Offices</option>
+                                <option value="villas">Villas / Row Houses</option>
+                                <option value="land">Approved Plots / Land Parcels</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="formBudget">Estimated Contract Value (₹ Lakhs/Crores)</label>
+                        <input type="text" id="formBudget" placeholder="e.g. ₹3 Crores or ₹50 Lakhs">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="formMessage">Project Details & Location Description</label>
+                        <textarea id="formMessage" rows="4" placeholder="Describe the current project site RERA number, construction stage, floor count, and specific barter preferences..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">Submit Proposal for Review</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Map Section -->
+        <div class="contact-map-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.743152631557!2d72.8134769!3d18.9482813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce1cf98f09df%3A0xe54d375bb691e847!2sPrasad%20Chambers%20Opera%20House!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">BARTER<span>CONSTRUCTIONS</span></div>
+                <p class="footer-about-text">Barter Constructions is Mumbai's premier provider of barter-based construction contracts. We resolve developer cash-strapped liabilities through seamless project execution in exchange for inventory.</p>
+                <div class="footer-social-row">
+                    <a href="https://www.facebook.com/profile.php?id=61577663205907" class="footer-social-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/barterconstructions/" class="footer-social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="services.html" class="footer-link">Our Services</a>
+                    <a href="projects.html" class="footer-link">Completed Projects</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Services Offered</h4>
+                <div class="footer-links">
+                    <a href="services.html" class="footer-link">RCC Core Structures</a>
+                    <a href="services.html" class="footer-link">Plastering & Finishes</a>
+                    <a href="services.html" class="footer-link">Lock-and-Key Turnkey</a>
+                    <a href="services.html" class="footer-link">Material Procurement</a>
+                    <a href="services.html" class="footer-link">Developer Consultancy</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Office Location</h4>
+                <div class="footer-contact-info">
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Prasad Chamber, Tata Road 2, Opera House, Girgaon, Mumbai, Maharashtra 400004</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 77770 45007</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>barterconstructions@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div>&copy; 2026 Barter Constructions. All Rights Reserved.</div>
+            <div>Designed for Real Estate Liquidity</div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            if (category) {
+                const cleanCategory = decodeURIComponent(category);
+                const messageField = document.getElementById('formMessage');
+                if (messageField) {
+                    messageField.value = `Enquiry regarding barter construction details and swap terms for category: ${cleanCategory}.\n\nWe have requirements for...`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

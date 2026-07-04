@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Categories :: Barter Constructions</title>
+    <meta name="description" content="Explore our wide range of barter business categories from RCC structures to finishing materials and consulting in Mumbai.">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    
+    <!-- CSS libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="blueprint-bg">
+
+    <!-- Topbar info -->
+    <div class="topbar">
+        <div class="topbar-container">
+            <div class="topbar-info">
+                <div class="topbar-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:barterconstructions@gmail.com">barterconstructions@gmail.com</a>
+                </div>
+                <div class="topbar-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 77770 45007</span>
+                </div>
+            </div>
+            <div class="topbar-socials">
+                <a href="https://www.facebook.com/profile.php?id=61577663205907" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/barterconstructions/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="site-header" id="mainHeader">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <div class="logo-text">BARTER<span>CONSTRUCTIONS</span></div>
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="category.html" class="nav-link active">Our Category</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-close" id="mobileClose">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="logo-text">BARTER<span>CONSTRUCTIONS</span></div>
+        <ul class="mobile-menu">
+            <li><a href="index.html" class="mobile-link">Home</a></li>
+            <li><a href="about.html" class="mobile-link">About Us</a></li>
+            <li><a href="category.html" class="mobile-link active">Our Category</a></li>
+            <li><a href="services.html" class="mobile-link">Services</a></li>
+            <li><a href="projects.html" class="mobile-link">Projects</a></li>
+            <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;">Enquire Now</a>
+    </div>
+    <div class="overlay-backdrop" id="overlayBackdrop"></div>
+
+    <!-- Subpage Banner -->
+    <section class="subpage-banner">
+        <h1>Our Categories</h1>
+        <div class="subpage-breadcrumbs">
+            <a href="index.html">Home</a> &nbsp;/&nbsp; Business Categories
+        </div>
+    </section>
+
+    <!-- Categories Grid Section -->
+    <section class="category-section">
+        <!-- Live Search Container -->
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="categorySearch" placeholder="Search categories (e.g., Cement, Elevator, Tiles...)" class="search-input">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="categories-grid" id="categoriesGrid">
+            <!-- Dynamically populated via JS -->
+        </div>
+
+        <!-- No Results Msg -->
+        <div class="no-results" id="noResults" style="display: none;">
+            <div class="no-results-icon"><i class="fa-regular fa-face-frown"></i></div>
+            <div class="no-results-text">No categories found matching your search.</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">BARTER<span>CONSTRUCTIONS</span></div>
+                <p class="footer-about-text">Barter Constructions is Mumbai's premier provider of barter-based construction contracts. We resolve developer cash-strapped liabilities through seamless project execution in exchange for inventory.</p>
+                <div class="footer-social-row">
+                    <a href="https://www.facebook.com/profile.php?id=61577663205907" class="footer-social-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/barterconstructions/" class="footer-social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="category.html" class="footer-link">Our Category</a>
+                    <a href="services.html" class="footer-link">Our Services</a>
+                    <a href="projects.html" class="footer-link">Completed Projects</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Services Offered</h4>
+                <div class="footer-links">
+                    <a href="services.html" class="footer-link">RCC Core Structures</a>
+                    <a href="services.html" class="footer-link">Plastering & Finishes</a>
+                    <a href="services.html" class="footer-link">Lock-and-Key Turnkey</a>
+                    <a href="services.html" class="footer-link">Material Procurement</a>
+                    <a href="services.html" class="footer-link">Developer Consultancy</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Office Location</h4>
+                <div class="footer-contact-info">
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Prasad Chamber, Tata Road 2, Opera House, Girgaon, Mumbai, Maharashtra 400004</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 77770 45007</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>barterconstructions@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div>&copy; 2026 Barter Constructions. All Rights Reserved.</div>
+            <div>Designed for Real Estate Liquidity</div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+
+    <!-- Categories Generation & Live Search Script -->
+    <script>
+        const categories = [
+            "A/C AMC", "Accountant", "Adventure Sports", "Advertisement", "Air conditions", 
+            "Aluminium Section", "Angle valve", "Artificial Grass", "Ball Valve", "Bank Realty", 
+            "Bath Tub", "Bathroom PVC Doors", "Bathroom set", "Bathroom Tiles", "Bedsheet + Blankets", 
+            "Brochures", "C.P.Fittings", "Cable TV", "Car Rental", "Carpet", 
+            "CCTV Camera", "Ceiling Fans", "Cement Suppliers", "Chandeliers", "Children Play Equipments", 
+            "Chimney", "Club House", "Compound wall", "Construction Chemical", "CPVC", 
+            "Curtains", "Day Clinic", "Dinner Set", "Dinning chairs", "Driver's Lounge", 
+            "Electric Conduit", "Electric Contractor", "Electric Meter+ Transformer", "Elevators", "Exhaust Fans", 
+            "Fabricators", "False Ceiling For Restaurant", "Family Swing", "Flooring Contractor", "Flooring Tiles", 
+            "Flush Tank", "Fountains / Water Bodies", "Fridge", "Furniture", "Garden Bench + Outdorr Dustbin", 
+            "Gardening Contractor", "Gazebo", "Generator Backup", "Geyser", "Glass", 
+            "Granite and Marbles", "Gym", "Hardware - Doors", "Hardware - wardrobe", "Home loan", 
+            "House keeping", "Insurance", "Intercom system", "Interior Designer", "Invertor for Shops", 
+            "Jacuzzi", "Jet Spray", "Kids Swimming pool", "Kitchen Tiles", "Kota And stones", 
+            "Labour Contractor", "Laminates", "Lamp shade", "Laundry", "Led Lights", 
+            "LED TV", "Main Door", "Matteress", "MCB / ELCB", "MEP Consultant", 
+            "Metal Fiercing (Patra)", "Modular Kitchen", "N A Consultant", "Name Plates", "Online Marketing", 
+            "Outdoor Lighting", "Overhead Tanks", "Painting Contractor Exterior", "Painting Contractor Interior", "Paints", 
+            "Parking Lifts", "Parking Tiles", "Pest Control", "Photo Frame", "Plumbing Contractor", 
+            "Plywood", "PMC Consultant", "Putty", "Rental Estate Agent", "Restaurant", 
+            "Restaurant Furniture", "Restaurant Kitchen", "Road", "Sanitary ware", "Security", 
+            "Severage Treatment Plant", "Shuttle Bus Services", "Sink", "Sliding Windows", "Sofas", 
+            "Solar Pole Lights", "Sole Selling Building", "Spa", "Stamp Duty Consultant", "Steel", 
+            "Supermarket", "Swimming Pool", "Switches", "SWR", "Terraces Furniture", 
+            "Tupperware", "UPVC", "Video Door Phone", "Wall Clock", "Wall paper", 
+            "Water Pumps", "Water Purifier / RO Plant", "Water Proofing", "Website", "WIFI", 
+            "Wire & Cables", "Wooden Flooring", "Wooden Main Door Frame"
+        ];
+
+        // Maps category keyword to font awesome icon
+        function getCategoryIcon(name) {
+            const lower = name.toLowerCase();
+            if (lower.includes("a/c") || lower.includes("air condition")) return "fa-snowflake";
+            if (lower.includes("accountant") || lower.includes("bank") || lower.includes("loan") || lower.includes("insurance")) return "fa-money-bill-wave";
+            if (lower.includes("sports") || lower.includes("swing") || lower.includes("play")) return "fa-child-reaching";
+            if (lower.includes("advertisement") || lower.includes("marketing") || lower.includes("brochure")) return "fa-bullhorn";
+            if (lower.includes("aluminium") || lower.includes("metal") || lower.includes("fabricator")) return "fa-hammer";
+            if (lower.includes("valve") || lower.includes("plumbing") || lower.includes("swr") || lower.includes("conduit")) return "fa-faucet";
+            if (lower.includes("grass") || lower.includes("garden") || lower.includes("fountain") || lower.includes("gazebo")) return "fa-seedling";
+            if (lower.includes("tub") || lower.includes("bath") || lower.includes("sanitary") || lower.includes("sink") || lower.includes("flush")) return "fa-bath";
+            if (lower.includes("door") || lower.includes("window") || lower.includes("upvc") || lower.includes("sliding")) return "fa-door-open";
+            if (lower.includes("bedsheet") || lower.includes("blanket") || lower.includes("carpet") || lower.includes("curtain") || lower.includes("sofa") || lower.includes("furniture") || lower.includes("chair") || lower.includes("mattress") || lower.includes("frame") || lower.includes("clock") || lower.includes("paper")) return "fa-couch";
+            if (lower.includes("cctv") || lower.includes("security") || lower.includes("intercom") || lower.includes("video door")) return "fa-shield-halved";
+            if (lower.includes("fan")) return "fa-fan";
+            if (lower.includes("cement") || lower.includes("putty") || lower.includes("chemical") || lower.includes("mason") || lower.includes("wall")) return "fa-trowel-bricks";
+            if (lower.includes("chandelier") || lower.includes("lamp") || lower.includes("light")) return "fa-lightbulb";
+            if (lower.includes("kitchen") || lower.includes("chimney")) return "fa-kitchen-set";
+            if (lower.includes("club") || lower.includes("lounge") || lower.includes("restaurant") || lower.includes("supermarket")) return "fa-building-columns";
+            if (lower.includes("electric") || lower.includes("meter") || lower.includes("transformer") || lower.includes("switch") || lower.includes("wire") || lower.includes("cable") || lower.includes("mcb")) return "fa-bolt";
+            if (lower.includes("elevator")) return "fa-elevator";
+            if (lower.includes("painting") || lower.includes("paint")) return "fa-brush";
+            if (lower.includes("floor") || lower.includes("tile") || lower.includes("granite") || lower.includes("marble") || lower.includes("stone") || lower.includes("plywood") || lower.includes("laminate")) return "fa-border-all";
+            if (lower.includes("fridge") || lower.includes("tv") || lower.includes("invertor") || lower.includes("geyser") || lower.includes("generator")) return "fa-plug";
+            if (lower.includes("glass")) return "fa-window-maximize";
+            if (lower.includes("gym")) return "fa-dumbbell";
+            if (lower.includes("house keeping") || lower.includes("pest") || lower.includes("laundry")) return "fa-hands-clean";
+            if (lower.includes("consultant") || lower.includes("pmc") || lower.includes("agent") || lower.includes("selling")) return "fa-briefcase";
+            if (lower.includes("designer")) return "fa-compass-drafting";
+            if (lower.includes("pool") || lower.includes("spa")) return "fa-water";
+            if (lower.includes("road")) return "fa-road";
+            if (lower.includes("severage") || lower.includes("tank") || lower.includes("pump") || lower.includes("purifier")) return "fa-droplet";
+            if (lower.includes("shuttle") || lower.includes("rental")) return "fa-bus";
+            if (lower.includes("steel")) return "fa-cubes";
+            if (lower.includes("water proofing")) return "fa-umbrella";
+            if (lower.includes("website") || lower.includes("wifi") || lower.includes("online")) return "fa-globe";
+            return "fa-helmet-safety"; // Default builder/safety icon
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('categoriesGrid');
+            const searchInput = document.getElementById('categorySearch');
+            const noResults = document.getElementById('noResults');
+
+            // Render categories
+            function render(filterQuery = "") {
+                grid.innerHTML = "";
+                const filtered = categories.filter(cat => 
+                    cat.toLowerCase().includes(filterQuery.toLowerCase().trim())
+                );
+
+                if (filtered.length === 0) {
+                    noResults.style.display = "block";
+                } else {
+                    noResults.style.display = "none";
+                    filtered.forEach(cat => {
+                        const icon = getCategoryIcon(cat);
+                        const card = document.createElement('a');
+                        card.className = "category-card";
+                        card.href = `service-single.html?category=${encodeURIComponent(cat)}`;
+                        card.setAttribute('data-category', cat);
+                        
+                        card.innerHTML = `
+                            <div class="category-card-content">
+                                <div class="category-card-icon"><i class="fa-solid ${icon}"></i></div>
+                                <span class="category-card-title">${cat}</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right category-card-arrow"></i>
+                        `;
+                        grid.appendChild(card);
+                    });
+                }
+            }
+
+            // Listen to search
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    render(e.target.value);
+                });
+            }
+
+            // Initial render
+            render();
+        });
+    </script>
+</body>
+</html>

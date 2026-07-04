@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us :: Barter Constructions - Real Estate Partners</title>
+    <meta name="description" content="Learn about Barter Constructions. We specialize in providing premier construction contracts in Mumbai and Pune with zero cash flow pressure.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Subpage Banner style */
+        .subpage-banner {
+            padding: 6rem 2rem;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            text-align: center;
+            margin-top: 90px;
+            position: relative;
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('images/hero_mumbai.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .subpage-banner h1 {
+            color: var(--bg-white);
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        .subpage-breadcrumbs {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-top: 0.5rem;
+        }
+        .subpage-breadcrumbs a {
+            color: var(--accent-orange);
+        }
+        
+        /* About detail sections */
+        .about-content-section {
+            padding: 5rem 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .about-grid-layout {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+        .about-card-info {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 6px;
+            box-shadow: var(--shadow-premium);
+            border-left: 4px solid var(--accent-orange);
+        }
+        .leadership-section {
+            padding: 5rem 2rem;
+            background-color: var(--bg-light);
+        }
+        .leader-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        .leader-card {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: var(--shadow-premium);
+            text-align: center;
+            padding-bottom: 2rem;
+            transition: var(--transition-smooth);
+        }
+        .leader-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        .leader-img-wrapper {
+            background-color: var(--primary-dark);
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 5rem;
+        }
+        .leader-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+        .leader-role {
+            font-size: 0.9rem;
+            color: var(--accent-orange);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Map Section style */
+        .map-section {
+            padding: 5rem 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .map-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .region-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .region-badge {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: var(--shadow-premium);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+        }
+        .region-badge i {
+            color: var(--accent-orange);
+        }
+        .region-badge:hover {
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 992px) {
+            .about-grid-layout, .map-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .leader-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .leader-grid {
+                grid-template-columns: 1fr;
+            }
+            .region-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="blueprint-bg">
+
+    <!-- Topbar info -->
+    <div class="topbar">
+        <div class="topbar-container">
+            <div class="topbar-info">
+                <div class="topbar-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:barterconstructions@gmail.com">barterconstructions@gmail.com</a>
+                </div>
+                <div class="topbar-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 77770 45007</span>
+                </div>
+            </div>
+            <div class="topbar-socials">
+                <a href="https://www.facebook.com/profile.php?id=61577663205907" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/barterconstructions/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="site-header" id="mainHeader">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <div class="logo-text">BARTER<span>CONSTRUCTIONS</span></div>
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About Us</a></li>
+                    <li><a href="category.html" class="nav-link">Our Category</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-close" id="mobileClose">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="logo-text">BARTER<span>CONSTRUCTIONS</span></div>
+        <ul class="mobile-menu">
+            <li><a href="index.html" class="mobile-link">Home</a></li>
+            <li><a href="about.html" class="mobile-link active">About Us</a></li>
+            <li><a href="category.html" class="mobile-link">Our Category</a></li>
+            <li><a href="services.html" class="mobile-link">Services</a></li>
+            <li><a href="projects.html" class="mobile-link">Projects</a></li>
+            <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;">Enquire Now</a>
+    </div>
+    <div class="overlay-backdrop" id="overlayBackdrop"></div>
+
+    <!-- Subpage Banner -->
+    <section class="subpage-banner">
+        <h1>About Our Company</h1>
+        <div class="subpage-breadcrumbs">
+            <a href="index.html">Home</a> &nbsp;/&nbsp; About Us
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content-section">
+        <div class="about-grid-layout">
+            <div>
+                <span class="section-tagline">Who We Are</span>
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Pioneers in Real Estate Barter Construction Models</h2>
+                <p style="margin-bottom: 1.2rem; font-size: 1.05rem; color: var(--text-muted);">Founded in Mumbai, Barter Constructions was established to solve the critical cash flow issues faced by real estate builders and developers. Traditionally, construction requires heavy upfront capital, stalling potential projects due to liquidity issues. We revolutionized this by introducing an inventory-for-services model.</p>
+                <p style="margin-bottom: 2rem; font-size: 1.05rem; color: var(--text-muted);">We execute full RCC core construction, shell development, building material supplies, and premium finishes. Instead of demanding liquid payments, we accept completed or semi-completed residential flats, shops, and office spaces at negotiated valuations.</p>
+                <a href="services.html" class="btn btn-primary">Our Services</a>
+            </div>
+            
+            <div class="about-card-info">
+                <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: var(--primary-dark);">Why Choose Our Model?</h3>
+                <ul style="display: flex; flex-direction: column; gap: 1rem;">
+                    <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-top: 4px;"></i> <span><strong>Retain Cash flow:</strong> Builders save up to 40% of standard liquid cash outlays.</span></li>
+                    <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-top: 4px;"></i> <span><strong>High-quality RCC:</strong> Strict adherence to BIS concrete mix grades.</span></li>
+                    <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-top: 4px;"></i> <span><strong>RERA Compliance:</strong> Clean documentation and legal escrow matching.</span></li>
+                    <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check" style="color: var(--accent-orange); margin-top: 4px;"></i> <span><strong>Fast Execution:</strong> Avoid project delays due to liquidity freezes.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership-section">
+        <div style="max-width: 1280px; margin: 0 auto;">
+            <div class="section-header">
+                <span class="section-tagline">Experts Behind The Vision</span>
+                <h2 class="section-title">Our Executive Board</h2>
+            </div>
+            
+            <div class="leader-grid">
+                <div class="leader-card">
+                    <div class="leader-img-wrapper"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3 class="leader-name">Harish Barter</h3>
+                    <p class="leader-role">Founder & Managing Director</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-img-wrapper"><i class="fa-solid fa-user-gear"></i></div>
+                    <h3 class="leader-name">Sanjay Mehta</h3>
+                    <p class="leader-role">Director of RCC Operations</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-img-wrapper"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3 class="leader-name">Adv. Rohit Shah</h3>
+                    <p class="leader-role">Head of Legal & Escrow Valuations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operational Locations (Map Segment) -->
+    <section class="map-section">
+        <div class="map-container">
+            <div>
+                <span class="section-tagline">Where We Operate</span>
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Widespread Presence Across Key Urban Hubs</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Barter Constructions actively undertakes construction and barter projects in key municipal limits across Maharashtra. We specialize in premium urban redevelopments and high-value vacation residences.</p>
+                
+                <div class="region-list">
+                    <div class="region-badge"><i class="fa-solid fa-location-dot"></i> South Mumbai</div>
+                    <div class="region-badge"><i class="fa-solid fa-location-dot"></i> Worli</div>
+                    <div class="region-badge"><i class="fa-solid fa-location-dot"></i> Girgaon</div>
+                    <div class="region-badge"><i class="fa-solid fa-location-dot"></i> Borivali</div>
+                    <div class="region-badge"><i class="fa-solid fa-location-dot"></i> Thane</div>
+                    <div class="region-badge"><i class="fa-solid fa-location-dot"></i> Pune</div>
+                    <div class="region-badge"><i class="fa-solid fa-location-dot"></i> Lonavala</div>
+                    <div class="region-badge"><i class="fa-solid fa-location-dot"></i> Navi Mumbai</div>
+                </div>
+            </div>
+            
+            <div style="background-color: var(--primary-dark); height: 400px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.4); border: 2px solid var(--accent-orange); box-shadow: var(--shadow-premium);">
+                <div style="text-align: center; padding: 2rem;">
+                    <i class="fa-solid fa-map-location-dot" style="font-size: 4rem; color: var(--accent-orange); margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: #fff; margin-bottom: 0.5rem;">Operational Map View</h3>
+                    <p style="font-size: 0.9rem;">Mumbai Metropolitan Region & Pune Zone Coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">BARTER<span>CONSTRUCTIONS</span></div>
+                <p class="footer-about-text">Barter Constructions is Mumbai's premier provider of barter-based construction contracts. We resolve developer cash-strapped liabilities through seamless project execution in exchange for inventory.</p>
+                <div class="footer-social-row">
+                    <a href="https://www.facebook.com/profile.php?id=61577663205907" class="footer-social-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/barterconstructions/" class="footer-social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="services.html" class="footer-link">Our Services</a>
+                    <a href="projects.html" class="footer-link">Completed Projects</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Services Offered</h4>
+                <div class="footer-links">
+                    <a href="services.html" class="footer-link">RCC Core Structures</a>
+                    <a href="services.html" class="footer-link">Plastering & Finishes</a>
+                    <a href="services.html" class="footer-link">Lock-and-Key Turnkey</a>
+                    <a href="services.html" class="footer-link">Material Procurement</a>
+                    <a href="services.html" class="footer-link">Developer Consultancy</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Office Location</h4>
+                <div class="footer-contact-info">
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Prasad Chamber, Tata Road 2, Opera House, Girgaon, Mumbai, Maharashtra 400004</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 77770 45007</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>barterconstructions@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div>&copy; 2026 Barter Constructions. All Rights Reserved.</div>
+            <div>Designed for Real Estate Liquidity</div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
+</html>
