@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Categories :: Barter Constructions</title>
-    <meta name="description" content="Explore our wide range of barter business categories from RCC structures to finishing materials and consulting in Mumbai.">
+    <meta name="description"
+        content="Explore our wide range of barter business categories from RCC structures to finishing materials and consulting in Mumbai.">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    
+
     <!-- CSS libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="blueprint-bg">
 
     <!-- Topbar info -->
@@ -27,8 +30,10 @@
                 </div>
             </div>
             <div class="topbar-socials">
-                <a href="https://www.facebook.com/profile.php?id=61577663205907" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/barterconstructions/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61577663205907" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/barterconstructions/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
     </div>
@@ -76,20 +81,21 @@
     </div>
     <div class="overlay-backdrop" id="overlayBackdrop"></div>
 
-    <!-- Subpage Banner -->
+    <!-- Subpage Banner
     <section class="subpage-banner">
         <h1>Our Categories</h1>
         <div class="subpage-breadcrumbs">
             <a href="index.html">Home</a> &nbsp;/&nbsp; Business Categories
         </div>
-    </section>
+    </section> -->
 
     <!-- Categories Grid Section -->
     <section class="category-section">
         <!-- Live Search Container -->
         <div class="search-container">
             <div class="search-wrapper">
-                <input type="text" id="categorySearch" placeholder="Search categories (e.g., Cement, Elevator, Tiles...)" class="search-input">
+                <input type="text" id="categorySearch"
+                    placeholder="Search categories (e.g., Cement, Elevator, Tiles...)" class="search-input">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
             </div>
         </div>
@@ -111,13 +117,17 @@
         <div class="footer-container">
             <div class="footer-col">
                 <div class="footer-logo">BARTER<span>CONSTRUCTIONS</span></div>
-                <p class="footer-about-text">Barter Constructions is Mumbai's premier provider of barter-based construction contracts. We resolve developer cash-strapped liabilities through seamless project execution in exchange for inventory.</p>
+                <p class="footer-about-text">Barter Constructions is Mumbai's premier provider of barter-based
+                    construction contracts. We resolve developer cash-strapped liabilities through seamless project
+                    execution in exchange for inventory.</p>
                 <div class="footer-social-row">
-                    <a href="https://www.facebook.com/profile.php?id=61577663205907" class="footer-social-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/barterconstructions/" class="footer-social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61577663205907" class="footer-social-icon"
+                        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/barterconstructions/" class="footer-social-icon"
+                        target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-col">
                 <h4 class="footer-title">Quick Links</h4>
                 <div class="footer-links">
@@ -129,7 +139,7 @@
                     <a href="contact.html" class="footer-link">Contact</a>
                 </div>
             </div>
-            
+
             <div class="footer-col">
                 <h4 class="footer-title">Services Offered</h4>
                 <div class="footer-links">
@@ -140,7 +150,7 @@
                     <a href="services.html" class="footer-link">Developer Consultancy</a>
                 </div>
             </div>
-            
+
             <div class="footer-col">
                 <h4 class="footer-title">Office Location</h4>
                 <div class="footer-contact-info">
@@ -159,7 +169,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <div>&copy; 2026 Barter Constructions. All Rights Reserved.</div>
             <div>Designed for Real Estate Liquidity</div>
@@ -172,32 +182,32 @@
     <!-- Categories Generation & Live Search Script -->
     <script>
         const categories = [
-            "A/C AMC", "Accountant", "Adventure Sports", "Advertisement", "Air conditions", 
-            "Aluminium Section", "Angle valve", "Artificial Grass", "Ball Valve", "Bank Realty", 
-            "Bath Tub", "Bathroom PVC Doors", "Bathroom set", "Bathroom Tiles", "Bedsheet + Blankets", 
-            "Brochures", "C.P.Fittings", "Cable TV", "Car Rental", "Carpet", 
-            "CCTV Camera", "Ceiling Fans", "Cement Suppliers", "Chandeliers", "Children Play Equipments", 
-            "Chimney", "Club House", "Compound wall", "Construction Chemical", "CPVC", 
-            "Curtains", "Day Clinic", "Dinner Set", "Dinning chairs", "Driver's Lounge", 
-            "Electric Conduit", "Electric Contractor", "Electric Meter+ Transformer", "Elevators", "Exhaust Fans", 
-            "Fabricators", "False Ceiling For Restaurant", "Family Swing", "Flooring Contractor", "Flooring Tiles", 
-            "Flush Tank", "Fountains / Water Bodies", "Fridge", "Furniture", "Garden Bench + Outdorr Dustbin", 
-            "Gardening Contractor", "Gazebo", "Generator Backup", "Geyser", "Glass", 
-            "Granite and Marbles", "Gym", "Hardware - Doors", "Hardware - wardrobe", "Home loan", 
-            "House keeping", "Insurance", "Intercom system", "Interior Designer", "Invertor for Shops", 
-            "Jacuzzi", "Jet Spray", "Kids Swimming pool", "Kitchen Tiles", "Kota And stones", 
-            "Labour Contractor", "Laminates", "Lamp shade", "Laundry", "Led Lights", 
-            "LED TV", "Main Door", "Matteress", "MCB / ELCB", "MEP Consultant", 
-            "Metal Fiercing (Patra)", "Modular Kitchen", "N A Consultant", "Name Plates", "Online Marketing", 
-            "Outdoor Lighting", "Overhead Tanks", "Painting Contractor Exterior", "Painting Contractor Interior", "Paints", 
-            "Parking Lifts", "Parking Tiles", "Pest Control", "Photo Frame", "Plumbing Contractor", 
-            "Plywood", "PMC Consultant", "Putty", "Rental Estate Agent", "Restaurant", 
-            "Restaurant Furniture", "Restaurant Kitchen", "Road", "Sanitary ware", "Security", 
-            "Severage Treatment Plant", "Shuttle Bus Services", "Sink", "Sliding Windows", "Sofas", 
-            "Solar Pole Lights", "Sole Selling Building", "Spa", "Stamp Duty Consultant", "Steel", 
-            "Supermarket", "Swimming Pool", "Switches", "SWR", "Terraces Furniture", 
-            "Tupperware", "UPVC", "Video Door Phone", "Wall Clock", "Wall paper", 
-            "Water Pumps", "Water Purifier / RO Plant", "Water Proofing", "Website", "WIFI", 
+            "A/C AMC", "Accountant", "Adventure Sports", "Advertisement", "Air conditions",
+            "Aluminium Section", "Angle valve", "Artificial Grass", "Ball Valve", "Bank Realty",
+            "Bath Tub", "Bathroom PVC Doors", "Bathroom set", "Bathroom Tiles", "Bedsheet + Blankets",
+            "Brochures", "C.P.Fittings", "Cable TV", "Car Rental", "Carpet",
+            "CCTV Camera", "Ceiling Fans", "Cement Suppliers", "Chandeliers", "Children Play Equipments",
+            "Chimney", "Club House", "Compound wall", "Construction Chemical", "CPVC",
+            "Curtains", "Day Clinic", "Dinner Set", "Dinning chairs", "Driver's Lounge",
+            "Electric Conduit", "Electric Contractor", "Electric Meter+ Transformer", "Elevators", "Exhaust Fans",
+            "Fabricators", "False Ceiling For Restaurant", "Family Swing", "Flooring Contractor", "Flooring Tiles",
+            "Flush Tank", "Fountains / Water Bodies", "Fridge", "Furniture", "Garden Bench + Outdorr Dustbin",
+            "Gardening Contractor", "Gazebo", "Generator Backup", "Geyser", "Glass",
+            "Granite and Marbles", "Gym", "Hardware - Doors", "Hardware - wardrobe", "Home loan",
+            "House keeping", "Insurance", "Intercom system", "Interior Designer", "Invertor for Shops",
+            "Jacuzzi", "Jet Spray", "Kids Swimming pool", "Kitchen Tiles", "Kota And stones",
+            "Labour Contractor", "Laminates", "Lamp shade", "Laundry", "Led Lights",
+            "LED TV", "Main Door", "Matteress", "MCB / ELCB", "MEP Consultant",
+            "Metal Fiercing (Patra)", "Modular Kitchen", "N A Consultant", "Name Plates", "Online Marketing",
+            "Outdoor Lighting", "Overhead Tanks", "Painting Contractor Exterior", "Painting Contractor Interior", "Paints",
+            "Parking Lifts", "Parking Tiles", "Pest Control", "Photo Frame", "Plumbing Contractor",
+            "Plywood", "PMC Consultant", "Putty", "Rental Estate Agent", "Restaurant",
+            "Restaurant Furniture", "Restaurant Kitchen", "Road", "Sanitary ware", "Security",
+            "Severage Treatment Plant", "Shuttle Bus Services", "Sink", "Sliding Windows", "Sofas",
+            "Solar Pole Lights", "Sole Selling Building", "Spa", "Stamp Duty Consultant", "Steel",
+            "Supermarket", "Swimming Pool", "Switches", "SWR", "Terraces Furniture",
+            "Tupperware", "UPVC", "Video Door Phone", "Wall Clock", "Wall paper",
+            "Water Pumps", "Water Purifier / RO Plant", "Water Proofing", "Website", "WIFI",
             "Wire & Cables", "Wooden Flooring", "Wooden Main Door Frame"
         ];
 
@@ -248,7 +258,7 @@
             // Render categories
             function render(filterQuery = "") {
                 grid.innerHTML = "";
-                const filtered = categories.filter(cat => 
+                const filtered = categories.filter(cat =>
                     cat.toLowerCase().includes(filterQuery.toLowerCase().trim())
                 );
 
@@ -262,7 +272,7 @@
                         card.className = "category-card";
                         card.href = `service-single.html?category=${encodeURIComponent(cat)}`;
                         card.setAttribute('data-category', cat);
-                        
+
                         card.innerHTML = `
                             <div class="category-card-content">
                                 <div class="category-card-icon"><i class="fa-solid ${icon}"></i></div>
@@ -287,4 +297,5 @@
         });
     </script>
 </body>
+
 </html>
